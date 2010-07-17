@@ -9,6 +9,7 @@ class Nuhttphelpers <Formula
 
   def install
     system "nuke"
+    system "mkdir -p #{prefix}"
     system "cp -rp NuHTTPHelpers.framework #{prefix}"
   end
 end

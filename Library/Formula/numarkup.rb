@@ -9,8 +9,8 @@ class Numarkup <Formula
 
   def install
     system "nuke"
-    system "cp -rp NuMarkup.framework #{prefix}"
     system "mkdir -p #{prefix}/share/numarkup"
     system "cp -rp test #{prefix}/share/numarkup"
+    system "cp -rp NuMarkup.framework #{prefix}"
   end
 end

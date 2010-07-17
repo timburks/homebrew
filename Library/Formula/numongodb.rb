@@ -9,8 +9,8 @@ class Numongodb <Formula
 
   def install
     system "nuke"
-    system "cp -rp NuMongoDB.framework #{prefix}"
     system "mkdir -p #{prefix}/share/numongodb"
     system "cp -rp test #{prefix}/share/numongodb"
+    system "cp -rp NuMongoDB.framework #{prefix}"
   end
 end
