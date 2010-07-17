@@ -9,13 +9,8 @@ class Nujson <Formula
 
   def install
     system "nuke"
-    system "rm -rf /Library/Frameworks/NuJSON.framework"
-    system "cp -rp NuJSON.framework /Library/Frameworks"
+    system "cp -rp NuJSON.framework #{prefix}"
     system "mkdir -p #{prefix}/share/nujson"
     system "cp -rp test #{prefix}/share/nujson"
-  end
-
-  def uninstall
-    system "rm -rf /Library/Frameworks/NuJSON.framework"
   end
 end

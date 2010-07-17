@@ -13,13 +13,8 @@ class Nu <Formula
     system "mkdir -p #{prefix}/bin"
     system "cp nush #{prefix}/bin"
     system "cp tools/* #{prefix}/bin"
-    system "rm -rf /Library/Frameworks/Nu.framework"
-    system "cp -rp Nu.framework /Library/Frameworks"
+    system "cp -rp Nu.framework #{prefix}"
     system "mkdir -p #{prefix}/share/nu"
     system "cp -rp test #{prefix}/share/nu"
-  end
-
-  def uninstall
-    system "rm -rf /Library/Frameworks/Nu.framework"
   end
 end

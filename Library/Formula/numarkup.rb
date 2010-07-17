@@ -9,13 +9,8 @@ class Numarkup <Formula
 
   def install
     system "nuke"
-    system "rm -rf /Library/Frameworks/NuMarkup.framework"
-    system "cp -rp NuMarkup.framework /Library/Frameworks"
+    system "cp -rp NuMarkup.framework #{prefix}"
     system "mkdir -p #{prefix}/share/numarkup"
     system "cp -rp test #{prefix}/share/numarkup"
-  end
-
-  def uninstall
-    system "rm -rf /Library/Frameworks/NuMarkup.framework"
   end
 end

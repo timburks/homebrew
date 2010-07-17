@@ -15,11 +15,6 @@ class Nunja <Formula
     system "cp nunjad #{prefix}/bin"
     system "mkdir -p #{prefix}/share/nunja"
     system "cp -rp sample #{prefix}/share/nunja"
-    system "rm -rf /Library/Frameworks/Nunja.framework"
-    system "cp -rp Nunja.framework /Library/Frameworks"
-  end
-
-  def uninstall
-    system "rm -rf /Library/Frameworks/Nunja.framework"
+    system "cp -rp Nunja.framework #{prefix}"
   end
 end

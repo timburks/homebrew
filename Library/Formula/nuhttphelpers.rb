@@ -9,11 +9,6 @@ class Nuhttphelpers <Formula
 
   def install
     system "nuke"
-    system "rm -rf /Library/Frameworks/NuHTTPHelpers.framework"
-    system "cp -rp NuHTTPHelpers.framework /Library/Frameworks"
-  end
-
-  def uninstall
-    system "rm -rf /Library/Frameworks/NuHTTPHelpers.framework"
+    system "cp -rp NuHTTPHelpers.framework #{prefix}"
   end
 end
