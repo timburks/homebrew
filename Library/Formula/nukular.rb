@@ -5,12 +5,12 @@ class Nukular <Formula
   homepage 'http://programming.nu'
   md5 '0922d1d0e9b8e0121827d603c0515b88'
 
-  depends_on 'Nu'
-  depends_on 'Nunja'
-  depends_on 'NuHTTPHelpers'
-  depends_on 'NuJSON'
-  depends_on 'NuMarkup'
-  depends_on 'NuMongoDB'
+  depends_on 'nu'
+  depends_on 'nunja'
+  depends_on 'nuhttphelpers'
+  depends_on 'nujson'
+  depends_on 'numarkup'
+  depends_on 'numongodb'
   
   def install
   end

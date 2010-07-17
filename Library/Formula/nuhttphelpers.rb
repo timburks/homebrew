@@ -5,7 +5,7 @@ class Nuhttphelpers <Formula
   homepage 'http://programming.nu'
   md5 '13941c735ff80512dd92a88bbddd65c5'
 
-  depends_on 'Nu'
+  depends_on 'nu'
 
   def install
     system "nuke"
