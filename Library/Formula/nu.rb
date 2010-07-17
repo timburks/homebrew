@@ -4,6 +4,8 @@ class Nu <Formula
   url 'http://programming.nu/releases/Nu-0.9.0.tgz'
   homepage 'http://programming.nu'
   md5 'bdd62acf03f09258c8f0ccbb0ba13896'
+ 
+  depends_on "pcre"
 
   def install
     system "make"
