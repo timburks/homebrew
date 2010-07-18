@@ -1,9 +1,9 @@
 require 'formula'
 
 class Nu <Formula
-  url 'http://programming.nu/releases/Nu-0.9.0.tgz'
+  url 'http://programming.nu/releases/Nu-0.9.1.tgz'
   homepage 'http://programming.nu'
-  md5 'bdd62acf03f09258c8f0ccbb0ba13896'
+  md5 '0ca6c844f7c2f826db93f1f87d26205c'
  
   depends_on "pcre"
 
